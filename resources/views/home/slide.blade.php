@@ -16,7 +16,7 @@
 									<a href="{{route('home.detail.show',$item['id'])}}"><button type="button" class="btn btn-default get">Get it now</button></a>
 								</div>
 								<div class="col-sm-6">
-									<img src="{{asset($item['img'])}}" class="girl img-responsive" alt="" />
+									<img src="{{asset("public/".$item['img'])}}" class="girl img-responsive" alt="" />
 								</div>
 							</div>
                             @else
@@ -28,7 +28,7 @@
                                     <a href="{{route('home.detail.show',$item['id'])}}"><button type="button" class="btn btn-default get">Get it now</button></a>
 								</div>
 								<div class="col-sm-6">
-									<img src="{{asset($item['img'])}}" class="girl img-responsive" alt="" />
+									<img src="{{asset("public/".$item['img'])}}" class="girl img-responsive" alt="" />
 								</div>
 							</div>
 							@endif

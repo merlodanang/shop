@@ -56,8 +56,8 @@
 </div>
 @stop
 @section('js')
-<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-<script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
+<script src="public/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+<script src="public/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
 <script>
   $('textarea').ckeditor({
     filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',

@@ -29,7 +29,7 @@
                     @foreach($cart['products'] as $key => $value)
 					 <tr>
 							<td class="text-center">
-                                <a href=""><img class="img-retina" src="{{$value['product']->img}}" width="100px" height="100px" alt=""></a>
+                                <a href=""><img class="img-retina" src="{{asset("public/".$value['product']->img)}}" width="100px" height="100px" alt=""></a>
                             </<td>
 							<td class="text-center">
 								<h4 class="label label-warning small"><a href="#" style="color: white;">{{$value['product']->name}}</a></h4>

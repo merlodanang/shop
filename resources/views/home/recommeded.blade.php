@@ -10,7 +10,7 @@
                                     <div class="product-image-wrapper">
                                         <div class="single-products">
                                             <div class="productinfo text-center">
-                                                <a href="{{route('home.detail.show',$item[0]['slug'])}}"><img src="{{asset($item[0]['img'])}}" width="255px" height="255px" alt="" /></a>
+                                                <a href="{{route('home.detail.show',$item[0]['slug'])}}"><img src="{{asset("public/".$item[0]['img'])}}" width="255px" height="255px" alt="" /></a>
                                                 <h2>${{$item[0]['price']}}</h2>
                                                 <p>{{$item[0]['name']}}</p>
                                                 <form action="{{route('home.checkout.storeSession')}}" method="POST" role="form">
@@ -32,7 +32,7 @@
                                     <div class="product-image-wrapper">
                                         <div class="single-products">
                                             <div class="productinfo text-center">
-                                                <a href="{{route('home.detail.show',$item[1]['slug'])}}"><img src="{{asset($item[1]['img'])}}" width="255px" height="255px" alt="" /></a>
+                                                <a href="{{route('home.detail.show',$item[1]['slug'])}}"><img src="{{asset("public/".$item[1]['img'])}}" width="255px" height="255px" alt="" /></a>
                                                  <h2>${{$item[1]['price']}}</h2>
                                                 <p>{{$item[1]['name']}}</p>
                                                 <form action="{{route('home.checkout.storeSession')}}" method="POST" role="form">
@@ -54,7 +54,7 @@
                                     <div class="product-image-wrapper">
                                         <div class="single-products">
                                             <div class="productinfo text-center">
-                                                <a href="{{route('home.detail.show',$item[2]['slug'])}}"><img src="{{asset($item[2]['img'])}}" width="255px" height="255px" alt="" /></a>
+                                                <a href="{{route('home.detail.show',$item[2]['slug'])}}"><img src="{{asset("public/".$item[2]['img'])}}" width="255px" height="255px" alt="" /></a>
                                                 <h2>${{$item[2]['price']}}</h2>
                                                 <p>{{$item[2]['name']}}</p>
                                                 <form action="{{route('home.checkout.storeSession')}}" method="POST" role="form">
@@ -80,7 +80,7 @@
                                     <div class="product-image-wrapper">
                                         <div class="single-products">
                                             <div class="productinfo text-center">
-                                                <a href="{{route('home.detail.show',$product['slug'])}}"><img src="{{asset($product['img'])}}" width="255px" height="255px"alt="" /></a>
+                                                <a href="{{route('home.detail.show',$product['slug'])}}"><img src="{{asset("public/".$product['img'])}}" width="255px" height="255px"alt="" /></a>
                                                 <h2>${{$product['price']}}</h2>
                                                 <p>{{$product['name']}}</p>
                                                 <form action="{{route('home.checkout.storeSession')}}" method="POST" role="form">

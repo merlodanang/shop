@@ -9,18 +9,18 @@
                 <div class="product-details"><!--product-details-->
                     <div class="col-sm-5">
                         <div class="view-product">
-                            <img src="{{asset($product->img)}}" alt="" />
+                            <img src="{{asset("public/".$product->img)}}" alt="" />
                         </div>
                         
 
                     </div>
                     <div class="col-sm-7">
                         <div class="product-information"><!--/product-information-->
-                            <img src="{{asset('images/product-details/new.jpg')}}" class="newarrival" alt="" />
+                            <img src="{{asset('public/images/product-details/new.jpg')}}" class="newarrival" alt="" />
                             <h2>{{$product->name}}</h2>
                             <p>{{$product->title}}</p>
 
-                            <img src="{{asset('images/product-details/rating.png')}}" alt="" />
+                            <img src="{{asset('public/images/product-details/rating.png')}}" alt="" />
                             <br/>
                             <span>
                                 <form action="{{route('home.checkout.storeSession')}}" method="POST">
@@ -38,7 +38,7 @@
                             <p><b>Availability:</b> In Stock</p>
                             <p><b>Condition:</b> New</p>
                             <p><b>Brand:</b> E-SHOPPER</p>
-                            <a href=""><img src="{{asset('images/product-details/share.png')}}" class="share img-responsive"  alt="" /></a>
+                            <a href=""><img src="{{asset('public/images/product-details/share.png')}}" class="share img-responsive"  alt="" /></a>
                         </div><!--/product-information-->
                     </div>
                 </div><!--/product-details-->
@@ -73,7 +73,7 @@
                                         <input type="email" placeholder="Email Address"/>
                                     </span>
                                     <textarea name="" ></textarea>
-                                    <b>Rating: </b> <img src="{{asset('images/product-details/rating.png')}}" alt="" />
+                                    <b>Rating: </b> <img src="{{asset('public/images/product-details/rating.png')}}" alt="" />
                                     <button type="button" class="btn btn-default pull-right">
                                         Submit
                                     </button>

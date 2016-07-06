@@ -17,7 +17,7 @@
 								<div>
 									<div class="productinfo text-center">
 										<a href="{{route('home.detail.show',$product->slug)}}">
-                                        <img src="{{asset($product->img)}}" alt="" />
+                                        <img src="{{asset("public/".$product->img)}}" alt="" />
                                         </a>
 										<h2>${{$product->price}}</h2>
 										<p>{{$product->title}}</p>

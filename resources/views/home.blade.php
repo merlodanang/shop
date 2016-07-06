@@ -15,7 +15,7 @@
                         <div class="product-image-wrapper">
                             <div>
                                 <div class="productinfo text-center">
-                                    <a href="{{route('home.detail.show',$product->slug)}}"><img src="{{$product->img}}" width="255px" height="255px" alt="" /></a>
+                                    <a href="{{route('home.detail.show',$product->slug)}}"><img src="{{asset("public/".$product->img)}}" width="255px" height="255px" alt="" /></a>
                                     <h2>${{$product->price}}</h2>
                                     <p>{{$product->title}}</p>
                                     <form action="{{route('home.checkout.storeSession')}}" method="POST" role="form">

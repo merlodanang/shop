@@ -23,7 +23,7 @@
             <td>{{ $product->title }}</td>
             <td>{{ $product->about }}</td>
             <td>{{ $product->price }}</td>
-            <td><img src="{{asset($product->img)}}" alt="Smiley face" height="42" width="42"></td>
+            <td><img src="{{asset("public/"$product->img)}}" alt="Smiley face" height="42" width="42"></td>
             
         </tr>
         @endforeach
