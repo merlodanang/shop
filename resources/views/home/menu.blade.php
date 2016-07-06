@@ -17,7 +17,7 @@
                         <ul>
                             @foreach($cat->subCategories as $sub)
                             <li>
-                                <a href="{{route('home.product.show',$sub->id)}}">{{$sub->name}} </a><span class="badge badge-success">2</span>
+                                <a href="{{route('home.product.show',$sub->slug)}}">{{$sub->name}} </a><span class="badge badge-success">2</span>
                             </li>
                             @endforeach
                         </ul>

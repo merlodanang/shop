@@ -39,11 +39,11 @@ class CategoryComposer
     {
         
         $with['subCategories'] = function($query) {
-            return $query->select('id', 'category_id', 'name');
+            return $query->select('id', 'category_id', 'name','slug');
         };
         
         $category = $this->category
-                ->select('id', 'name')
+                ->select('id', 'name', 'slug')
                 ->with($with)->get();
         $pro = $this->product->select('id','name','img','title','price','slug')->take(15)->get()->toArray();
         $recommended = $this->product->select('id','name','img','title','price','slug')->take(10)->get()->toArray();

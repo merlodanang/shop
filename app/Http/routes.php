@@ -77,3 +77,8 @@ Route::post('order', [
     'uses' => 'Home\OrderController@store',
     'as' => 'home.order.store'
 ]);
+
+Route::get('categories/products/{slug}', [
+    'uses' => 'Home\CategoryController@products',
+    'as' => 'home.category.products'
+]);

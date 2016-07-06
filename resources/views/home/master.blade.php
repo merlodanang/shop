@@ -98,7 +98,7 @@
                                 <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                          @foreach($category as $cat)
-                                        <li><a href="shop.html">{{$cat->name}}</a>
+                                        <li><a href="{{route('home.category.products',$cat->slug)}}">{{$cat->name}}</a>
                                         </li>
                                         @endforeach
                                     </ul>

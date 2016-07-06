@@ -18,8 +18,11 @@ class SubCategoriesSeeder extends Seeder
         $ids = Category::lists('id')->toArray();
         $faker = Faker::create();
         for($i = 0; $i<50; $i++) {
+            $name = $faker->name;
             factory(SubCategory::class)->create([
-                'category_id' => $faker->randomElement($ids)
+                'category_id' => $faker->randomElement($ids),
+                'name' => $name,
+                'slug' => str_slug($name)
             ]);
         }
     }

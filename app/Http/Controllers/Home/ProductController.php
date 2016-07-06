@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
 use App\Product;
+use App\SubCategory;
 
 class ProductController extends Controller
 {
@@ -15,9 +16,10 @@ class ProductController extends Controller
         $this->product = $product;
     }
     
-    public function show($id)
+    public function show($slug)
     {
-        $products = $this->product->where('sub_category_id',$id)->paginate(10);
+        $subCategory = SubCategory::whereSlug($slug)->first();
+        $products = $this->product->where('sub_category_id',$subCategory->id)->paginate(15);
         return view('products',['products' => $products]);
     }
 }

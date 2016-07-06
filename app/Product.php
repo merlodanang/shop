@@ -23,5 +23,9 @@ class Product extends Model
     {
         return html_entity_decode($value);
     }
+    public function getCreatedAtAttribute($value)
+    {
+        return \Carbon\Carbon::parse($value)->timestamp;
+    }
 
 }
